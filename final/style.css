@@ -1,0 +1,82 @@
+/* Pretendard-Regular 폰트 */
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: Thin;
+}
+
+/* 전체 배경 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 흰색 박스 스타일 */
+.center-box {
+    background-color: white;
+    width: 40%;
+    max-width: 300px;
+    height: 80%;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* 박스 위로 표시 */
+}
+
+/* 텍스트 스타일 */
+.center-box p {
+    color: black;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+/* 굵은 텍스트 스타일 */
+.bold-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+    cursor: pointer;
+}
+
+/* 숨겨진 텍스트 스타일 */
+.hidden-text {
+    display: none;
+    margin-top: 3px;
+}
+
+/* 타이핑 효과를 위한 컨테이너 */
+.typing-text {
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* 눈송이 스타일 */
+.snowflake {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 1rem;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
